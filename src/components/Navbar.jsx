@@ -29,7 +29,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                     className="font-playfair text-3xl font-bold"
                     onClick={() => setSelectedPage('home')}
                 >
-                    JE
+                    Portfolio
                 </h4>
                 {/* Navbar for Desktop */}
                 {isAboveSmallScreen ? (
