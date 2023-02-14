@@ -19,7 +19,7 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="app bg-deep-blue">
+    <div className="app bg-my-purple">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

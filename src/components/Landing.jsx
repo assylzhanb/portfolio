@@ -20,7 +20,8 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
+              // take src photo from assets folder and put it here
+              src="../assets/profile-image.png"
             />
           </div>
         ) : (
@@ -31,6 +32,8 @@ const Landing = ({ setSelectedPage }) => {
           />
         )}
       </div>
+
+
 
       {/* MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32 m-10">
@@ -51,8 +54,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center p-5 md:text-start">
-            I'm a Computer Science student at Ulsan National Institute of Science and Technology (UNIST) in South Korea. I'm passionate about building web applications and learning new technologies. 
-            Currently looking for internship opportunities for Summer 2023.
+          Currently studying for a bachelor's degree in Computer Science and Engineering at UNIST, South Korea, possessing self-assurance and a strong work ethic. 
           </p>
         </motion.div>
 
@@ -86,7 +88,7 @@ const Landing = ({ setSelectedPage }) => {
             </div>
           </AnchorLink>
         </motion.div>
-
+        
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
           initial="hidden"
@@ -103,6 +105,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
     </section>
   );
+  
 };
 
 export default Landing;

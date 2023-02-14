@@ -29,7 +29,7 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
         } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("projects")}
       />
-
+      
       <AnchorLink
         href="#extracurriculars"
         className={`${
