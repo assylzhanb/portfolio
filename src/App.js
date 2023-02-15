@@ -3,6 +3,8 @@ import useMediaQuery from './hooks/useMediaQuery';
 import Navbar from './components/Navbar';
 import DotGroup from './components/DotGroup';
 import Landing from './components/Landing';
+import LineGradient from './components/LineGradient';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -33,7 +35,13 @@ function App() {
           />
         )}
       </div>
+
       <Landing setSelectedPage={setSelectedPage} />
+      <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'></div>
+
+      <Skills />
+
     </div>
   );
 }

@@ -20,6 +20,8 @@ module.exports = {
 
         "gradient-rainblue":
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+        "gradient-rainvio":
+          "linear-gradient(90deg, #8B5CF6 0%, #FFD700 50%, #F472B6 100%)"
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

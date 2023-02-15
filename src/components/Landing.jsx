@@ -1,4 +1,4 @@
-//import SocialMediaIcons from "../components/SocialMediaIcons";
+import SocialMediaIcons from "./SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -15,7 +15,7 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-yellow before:z-[-1]"
           >
             <img
               alt="profile"
@@ -79,7 +79,7 @@ const Landing = ({ setSelectedPage }) => {
             Contact Me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5 pl-0.5 m-2"
+            className="rounded-r-sm bg-gradient-rainvio py-0.5 pr-0.5 pl-0.5 m-2"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -100,7 +100,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          {/* <SocialMediaIcons /> */}
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>

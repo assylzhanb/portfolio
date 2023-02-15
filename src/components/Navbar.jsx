@@ -38,32 +38,32 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                             page="Home"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                         />
-                         <Link
+                        />
+                        <Link
                             page="Skills"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                         />
-                         <Link
+                        />
+                        <Link
                             page="Projects"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                         />
-                         {/* <Link
+                        />
+                        {/* <Link
                             page="Testimonials"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                          /> */}
-                         <Link
+                        <Link
                             page="Extracurriculars"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                         />
-                         <Link
+                        />
+                        <Link
                             page="Contact"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
-                         />
+                        />
                     </div>
                 ):(
                     <button
