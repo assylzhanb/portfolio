@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
-const Link = ({page, selectedPage, setSelectedPage}) => {
+const Link = ({ page, selectedPage, setSelectedPage }) => {
     const lowerCasePage = page.toLowerCase();
-    return(
+    return (
         <AnchorLink
             className={`${selectedPage === lowerCasePage ? 'text-yellow' : ''} 
             hover:text-yellow transition duration-500
@@ -18,12 +18,12 @@ const Link = ({page, selectedPage, setSelectedPage}) => {
 
 // make a portfolio website using react
 // navbar component that takes selectedPage and setSelected Page as a prop and returns a navbar
-const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreen = useMediaQuery('(min-width: 768px)');
     const navbarBackground = isTopOfPage ? '' : 'bg-deep-blue';
     return (
-        <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+        <nav className={`${navbarBackground} transition-colors duration-200 z-40 w-full fixed top-0 py-6`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
                 <h4
                     className="font-playfair text-3xl font-bold"
@@ -65,15 +65,15 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}) => {
                             setSelectedPage={setSelectedPage}
                         />
                     </div>
-                ):(
+                ) : (
                     <button
                         className='rounded-full bg-red p-2'
                         onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
-                        <img alt = "menu-icon" src="../assets/menu-icon.svg" />
+                        <img alt="menu-icon" src="../assets/menu-icon.svg" />
                     </button>
                 )}
-                
+
             </div>
 
         </nav>

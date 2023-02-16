@@ -24,8 +24,7 @@ const MySkills = () => {
                     </p>
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
-                        Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-                        fames odio in at.
+                        My skills encompass technical proficiency in multiple programming languages and frameworks, experience in advanced problem-solving, and strong soft skills.
                     </p>
                 </motion.div>
 
@@ -88,13 +87,12 @@ const MySkills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-semibold text-5xl">02</p>
-                            <p className="font-semibold text-3xl mt-3">Frontend</p>
+                            <p className="font-semibold text-3xl mt-3">Problem Solving</p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        Worked with React, Next.js, Tailwind CSS, Framer Motion, Bootstrap 5.
-                        Familiar Styled Componets and Material UI.
+                        Through my experience on LeetCode, I have developed a deep understanding of advanced topics such as hashmaps, binary search, divide and conquer, bit manipulation, recursion, and more. My problem-solving skills have been honed through solving over 150 challenging problems on the platform, and I am able to write efficient, clean code that receives high praise from fellow developers
                     </p>
                 </motion.div>
                 {/* IMAGINATIVE */}

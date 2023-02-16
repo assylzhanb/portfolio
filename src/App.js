@@ -9,9 +9,9 @@ import Skills from './components/Skills';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
-  const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isAboveMediumScreen = useMediaQuery('(min-width: 1060px)');
 
+  const isAboveMediumScreen = useMediaQuery('(min-width: 1060px)');
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) setIsTopOfPage(true);
