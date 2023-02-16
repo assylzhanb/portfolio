@@ -6,6 +6,8 @@ import Landing from './components/Landing';
 import LineGradient from './components/LineGradient';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Extracurriculars from './components/Extracurriculars';
 
 import { motion } from 'framer-motion';
@@ -76,13 +78,22 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
+          onViewportEnter={() => setSelectedPage("extracurriculars")}
         >
           <Extracurriculars />
         </motion.div>
       </div>
-
-
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
+        </motion.div>
+      </div>
+      <Footer />
     </div>
   );
 }

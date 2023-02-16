@@ -32,8 +32,8 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-semibold text-4xl">
+            <span className="text-yellow">CONTACT ME</span>
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -42,7 +42,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between gap-16">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -54,7 +54,11 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          {/* make this image smaller */}
+          <img width={300} height={400}
+            className="rounded-lg"
+
+            src="../assets/contact-image.jpeg" alt="contact" />
         </motion.div>
 
         <motion.div
@@ -75,7 +79,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-yellow rounded-lg font-semibold placeholder-opaque-black p-3"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -91,7 +95,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-yellow rounded-lg font-semibold placeholder-opaque-black p-3 mt-5"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -107,7 +111,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-yellow rounded-lg font-semibold placeholder-opaque-black p-3 mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -127,7 +131,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-red font-semibold rounded-lg text-deep-blue mt-5 hover:bg-yellow hover:text-white transition duration-500"
               type="submit"
             >
               SEND ME A MESSAGE

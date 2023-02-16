@@ -1,12 +1,12 @@
 const ExtraCurriculars = () => {
     return (
-        <section id="skills" className="pt-10 pb-24">
+        <section id="extracurriculars" className="pt-10 pb-24">
             <div class="font-semibold 
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-indigo-500 via-purple-500 to-yellow-500
             animate-text
             ">
-                <h1 className="text-4xl">Extra Curriculars</h1>
+                <h1 className="text-4xl">ExtraCurriculars</h1>
             </div>
             <div class="font-semibold 
             bg-gradient-to-r bg-clip-text  text-transparent 
