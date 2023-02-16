@@ -9,7 +9,7 @@ const MySkills = () => {
             {/* HEADER AND IMAGE SECTION */}
             <div className="md:flex md:justify-between md:gap-16 mt-32 ">
                 <motion.div
-                    className="md:w-1/3 ml-7"
+                    className="md:w-1/3"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -36,7 +36,7 @@ const MySkills = () => {
                         >
                             <img
                                 alt="skills"
-                                className="z-10"
+                                className="z-10 saturate-100"
                                 src="assets/skills-image.png"
                             />
                         </div>
@@ -48,7 +48,7 @@ const MySkills = () => {
 
             {/* SKILLS */}
             <div className="md:flex md:justify-between mt-16 gap-32">
-                {/* EXPERIENCE */}
+                {/* Technical */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -72,7 +72,7 @@ const MySkills = () => {
                     </p>
                 </motion.div>
 
-                {/* INNOVATIVE */}
+                {/* Problem Solving */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -95,7 +95,7 @@ const MySkills = () => {
                         Through my experience on LeetCode, I have developed a deep understanding of advanced topics such as hashmaps, binary search, divide and conquer, bit manipulation, recursion, and more. My problem-solving skills have been honed through solving over 150 challenging problems on the platform, and I am able to write efficient, clean code that receives high praise from fellow developers
                     </p>
                 </motion.div>
-                {/* IMAGINATIVE */}
+                {/* Soft Skills */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
