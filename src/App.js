@@ -13,12 +13,6 @@ import Extracurriculars from './components/Extracurriculars';
 import Res from './components/Res';
 
 
-
-
-
-
-
-
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
 
@@ -118,5 +112,3 @@ function App() {
 }
 
 export default App;
-// Res component is not working why?
-// A: because it is not a component, it is a function
